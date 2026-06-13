@@ -4,7 +4,7 @@ export default function Home() {
       name: "Curry con Pollo",
       desc: "Curry japonés con arroz acompañado de katsu de pollo.",
       price: "S/ 23",
-      image: "/images/curry-pollo.jpg",
+      image: "/images/katsu-curry-1.jpg",
     },
     {
       name: "Curry con Cerdo",
@@ -16,13 +16,13 @@ export default function Home() {
       name: "Curry con Pescado",
       desc: "Curry japonés con arroz acompañado de katsu de pescado.",
       price: "S/ 28",
-      image: "/images/curry-mixto.jpg",
+      image: "/images/katsu-curry-2.jpg",
     },
     {
-      name: "Curry con Camarón",
-      desc: "Curry japonés con arroz acompañado de katsu de camarón.",
-      price: "S/ 30",
-      image: "/images/hero-curry.jpg",
+      name: "Mochi",
+      desc: "Postre suave y dulce con sabores de fresa, mango y oreo.",
+      price: "S/ 8",
+      image: "/images/mochi.jpg",
     },
   ];
 
@@ -129,12 +129,46 @@ export default function Home() {
   ];
 
   const galleryImages = [
-    "/images/local-frontal.jpeg",
-    "/images/hero-curry.jpg",
-    "/images/curry-especial.jpg",
-    "/images/curry-pollo.jpg",
-    "/images/curry-mixto.jpg",
-    "/images/bebidas.jpg",
+    {
+      image: "/images/fachada-noche.jpg",
+      title: "Nuestra fachada",
+      desc: "El letrero de YAY Curry iluminando la noche.",
+    },
+    {
+      image: "/images/ambiente-1.jpg",
+      title: "Ambiente acogedor",
+      desc: "Un espacio cálido para disfrutar con calma.",
+    },
+    {
+      image: "/images/ambiente-2.jpg",
+      title: "Espacio para compartir",
+      desc: "Mesas cómodas para amigos y familia.",
+    },
+    {
+      image: "/images/interior-1.jpg",
+      title: "Interior del local",
+      desc: "Un ambiente sencillo, moderno y agradable.",
+    },
+    {
+      image: "/images/katsu-curry-1.jpg",
+      title: "Curry y katsu",
+      desc: "Sabor casero con textura crocante.",
+    },
+    {
+      image: "/images/katsu-curry-2.jpg",
+      title: "Katsu crocante",
+      desc: "Una opción deliciosa para acompañar el curry.",
+    },
+    {
+      image: "/images/mochi.jpg",
+      title: "Mochis dulces",
+      desc: "Postres suaves para cerrar la experiencia.",
+    },
+    {
+      image: "/images/bebidas.jpg",
+      title: "Bebidas",
+      desc: "Opciones frescas para acompañar tu pedido.",
+    },
   ];
 
   return (
@@ -237,17 +271,23 @@ export default function Home() {
             <div className="mt-10 grid max-w-xl gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
                 <p className="text-2xl font-black text-[#f2c94c]">11:00</p>
-                <p className="mt-1 text-sm text-gray-100">Abrimos todos los días</p>
+                <p className="mt-1 text-sm text-gray-100">
+                  Abrimos todos los días
+                </p>
               </div>
 
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
                 <p className="text-2xl font-black text-[#f2c94c]">YAY</p>
-                <p className="mt-1 text-sm text-gray-100">Curry • Katsu • Mochi</p>
+                <p className="mt-1 text-sm text-gray-100">
+                  Curry • Katsu • Mochi
+                </p>
               </div>
 
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
                 <p className="text-2xl font-black text-[#f2c94c]">Wanchaq</p>
-                <p className="mt-1 text-sm text-gray-100">Urb. Santa Mónica L4</p>
+                <p className="mt-1 text-sm text-gray-100">
+                  Urb. Santa Mónica L4
+                </p>
               </div>
             </div>
           </div>
@@ -257,7 +297,7 @@ export default function Home() {
       </section>
 
       <section className="bg-white px-6 py-16">
-        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-2 md:grid-cols-4">
           {[
             "Curry japonés",
             "Katsu crocante",
@@ -292,13 +332,13 @@ export default function Home() {
             arroz y acompañados con katsu.
           </p>
 
-          <div className="grid gap-8 md:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {menuItems.map((item) => (
               <div
                 key={item.name}
                 className="group cursor-pointer overflow-hidden rounded-3xl bg-white text-left shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.name}
@@ -419,9 +459,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-center">
           <div className="overflow-hidden rounded-3xl shadow-2xl">
             <img
-              src="/images/local-frontal.jpeg"
-              alt="Local de YAY Curry"
-              className="h-80 w-full object-cover transition duration-500 hover:scale-105"
+              src="/images/ambiente-1.jpg"
+              alt="Ambiente de YAY Curry"
+              className="h-96 w-full object-cover transition duration-500 hover:scale-105"
             />
           </div>
 
@@ -440,6 +480,24 @@ export default function Home() {
               objetivo es ofrecer una experiencia deliciosa en cada plato, ideal
               para disfrutar solo, en familia o con amigos.
             </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5">
+                <h3 className="font-black text-[#f2c94c]">Sabor casero</h3>
+                <p className="mt-2 text-sm text-gray-200">
+                  Platos preparados para disfrutar curry, katsu y mochi en un
+                  ambiente cálido.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5">
+                <h3 className="font-black text-[#f2c94c]">Espacio acogedor</h3>
+                <p className="mt-2 text-sm text-gray-200">
+                  Un local pensado para compartir buenos momentos con amigos o
+                  familia.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -450,21 +508,42 @@ export default function Home() {
             Galería
           </p>
 
-          <h2 className="mb-12 mt-3 text-4xl font-black">
+          <h2 className="mb-4 mt-3 text-4xl font-black">
             Momentos deliciosos
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {galleryImages.map((image, index) => (
+          <p className="mx-auto mb-12 max-w-2xl text-gray-600">
+            Conoce nuestro local, nuestros platos y esos pequeños momentos que
+            hacen especial la experiencia YAY Curry.
+          </p>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {galleryImages.map((item, index) => (
               <div
-                key={image}
-                className="group h-64 cursor-pointer overflow-hidden rounded-3xl bg-[#153d2b] shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                key={item.image}
+                className={`group cursor-pointer overflow-hidden rounded-3xl bg-[#153d2b] shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
+                  index === 0 || index === 4 ? "lg:col-span-2" : ""
+                }`}
               >
-                <img
-                  src={image}
-                  alt={`Galería YAY Curry ${index + 1}`}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                <div className="relative h-72 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-90"></div>
+
+                  <div className="absolute bottom-5 left-5 right-5 text-left">
+                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#f2c94c]">
+                      YAY Curry
+                    </p>
+                    <h3 className="mt-1 text-xl font-black text-white">
+                      {item.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-gray-100">{item.desc}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
