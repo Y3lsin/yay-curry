@@ -7,22 +7,22 @@ export default function Home() {
       image: "/images/katsu-curry-1.jpg",
     },
     {
-      name: "Curry con Cerdo",
-      desc: "Curry japonés con arroz acompañado de katsu de cerdo.",
+      name: "Curry con Pollo y Arroz",
+      desc: "Curry japonés con arroz acompañado de katsu de Pollo.",
       price: "S/ 25",
-      image: "/images/curry-especial.jpg",
+      image: "/images/katsu-curry-4.jpg",
     },
     {
       name: "Curry con Pescado",
       desc: "Curry japonés con arroz acompañado de katsu de pescado.",
       price: "S/ 28",
-      image: "/images/katsu-curry-2.jpg",
+      image: "/images/katsu-curry-5.jpg",
     },
     {
       name: "Mochi",
       desc: "Postre suave y dulce con sabores de fresa, mango y oreo.",
       price: "S/ 8",
-      image: "/images/mochi.jpg",
+      image: "/images/mochi-1.jpg",
     },
   ];
 
@@ -111,7 +111,7 @@ export default function Home() {
       items: [
         {
           name: "Milk Tea con perlas",
-          desc: "Sabores: original, arroz y fresa",
+          desc: "Sabores: originales",
           price: "S/ 7",
         },
         {
@@ -145,9 +145,14 @@ export default function Home() {
       desc: "Mesas cómodas para amigos y familia.",
     },
     {
+      image: "/images/local-frontal.jpg",
+      title: "Rincón especial",
+      desc: "Un ambiente bonito para disfrutar tu pedido.",
+    },
+    {
       image: "/images/interior-1.jpg",
       title: "Interior del local",
-      desc: "Un ambiente sencillo, moderno y agradable.",
+      desc: "Un espacio sencillo, moderno y agradable.",
     },
     {
       image: "/images/katsu-curry-1.jpg",
@@ -160,9 +165,24 @@ export default function Home() {
       desc: "Una opción deliciosa para acompañar el curry.",
     },
     {
-      image: "/images/mochi.jpg",
+      image: "/images/katsu-curry-3.jpg",
+      title: "Especial de la casa",
+      desc: "Una opción ideal para disfrutar el sabor YAY.",
+    },
+    {
+      image: "/images/katsu-curry-4.jpg",
+      title: "Curry especial",
+      desc: "Curry japonés con corazón casero.",
+    },
+    {
+      image: "/images/mochi-1.jpg",
       title: "Mochis dulces",
       desc: "Postres suaves para cerrar la experiencia.",
+    },
+    {
+      image: "/images/mochi.jpg",
+      title: "Mochi tradicional",
+      desc: "Dulce, suave y perfecto para compartir.",
     },
     {
       image: "/images/bebidas.jpg",
@@ -174,15 +194,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f3e8] text-[#153d2b]">
       <header className="fixed left-0 top-0 z-50 w-full bg-[#0f2f22]/90 text-white shadow-md backdrop-blur-md">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6">
           <a href="#inicio" className="flex items-center gap-3">
             <img
               src="/images/logo-yay-curry.png"
               alt="Logo de YAY Curry"
-              className="h-12 w-12 rounded-full object-cover ring-2 ring-[#f2c94c]/50"
+              className="h-11 w-11 rounded-full object-cover ring-2 ring-[#f2c94c]/50 md:h-12 md:w-12"
             />
 
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-xl font-bold md:text-2xl">
               YAY <span className="text-[#f2c94c]">Curry</span>
             </h1>
           </a>
@@ -212,7 +232,7 @@ export default function Home() {
             href="https://wa.me/51991607054"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#f2c94c] px-5 py-2 font-semibold text-[#153d2b] transition hover:-translate-y-1 hover:bg-white hover:shadow-lg"
+            className="rounded-full bg-[#f2c94c] px-4 py-2 text-sm font-semibold text-[#153d2b] transition hover:-translate-y-1 hover:bg-white hover:shadow-lg md:px-5 md:text-base"
           >
             WhatsApp
           </a>
@@ -224,15 +244,13 @@ export default function Home() {
         className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28 text-white"
       >
         <img
-          src="/images/local-frontal.jpeg"
+          src="/images/local-frontal.jpg"
           alt="Local de YAY Curry"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/55"></div>
-
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f2f22]/95 via-[#0f2f22]/75 to-black/25"></div>
-
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
 
         <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-10 md:grid-cols-2 md:items-center">
@@ -270,7 +288,7 @@ export default function Home() {
 
             <div className="mt-10 grid max-w-xl gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
-                <p className="text-2xl font-black text-[#f2c94c]">11:00</p>
+                <p className="text-2xl font-black text-[#f2c94c]">12:00 pm</p>
                 <p className="mt-1 text-sm text-gray-100">
                   Abrimos todos los días
                 </p>
@@ -286,7 +304,7 @@ export default function Home() {
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
                 <p className="text-2xl font-black text-[#f2c94c]">Wanchaq</p>
                 <p className="mt-1 text-sm text-gray-100">
-                  Urb. Santa Mónica L4
+                  Urb. Santa Mónica B14
                 </p>
               </div>
             </div>
@@ -338,7 +356,7 @@ export default function Home() {
                 key={item.name}
                 className="group cursor-pointer overflow-hidden rounded-3xl bg-white text-left shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden bg-[#153d2b]">
                   <img
                     src={item.image}
                     alt={item.name}
@@ -358,7 +376,7 @@ export default function Home() {
                       {item.name}
                     </h3>
 
-                    <span className="rounded-full bg-[#f2c94c] px-3 py-1 text-sm font-black text-[#153d2b]">
+                    <span className="shrink-0 rounded-full bg-[#f2c94c] px-3 py-1 text-sm font-black text-[#153d2b]">
                       {item.price}
                     </span>
                   </div>
@@ -371,13 +389,23 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mx-auto mt-10 max-w-2xl rounded-2xl bg-white px-6 py-4 text-center font-semibold text-[#153d2b] shadow-sm">
-            Trae tu tupper y recibe{" "}
-            <span className="font-black text-[#d98c00]">
-              S/ 2 de descuento
-            </span>{" "}
-            en platos principales.
+          <div className="mx-auto mt-10 grid max-w-3xl gap-4 md:grid-cols-2">
+            <div className="rounded-2xl bg-white px-6 py-5 text-center font-semibold text-[#153d2b] shadow-sm">
+               Trae tu tupper y recibe{" "}
+               <span className="font-black text-[#d98c00]">
+                S/ 2 de descuento
+               </span>{""}
+               en platos principales. ¡Curry delicioso con conciencia ecológica!
+            </div>
+            <div className="rounded-2xl border-2 border-[#f2c94c] bg-[#153d2b] px-6 py-5 text-center font-semibold text-white shadow-sm">
+              Compra 10 veces y la{" "}
+              <span className="font-black text-[#f2c94c]">
+                proxima comida es gratis
+              </span>
+              .
+            </div>
           </div>
+
 
           <a
             href="https://wa.me/51991607054"
@@ -459,7 +487,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-center">
           <div className="overflow-hidden rounded-3xl shadow-2xl">
             <img
-              src="/images/ambiente-1.jpg"
+              src="/images/ambiente-3.jpg"
               alt="Ambiente de YAY Curry"
               className="h-96 w-full object-cover transition duration-500 hover:scale-105"
             />
@@ -508,7 +536,7 @@ export default function Home() {
             Galería
           </p>
 
-          <h2 className="mb-4 mt-3 text-4xl font-black">
+          <h2 className="mb-4 mt-3 text-4xl font-black md:text-5xl">
             Momentos deliciosos
           </h2>
 
@@ -522,7 +550,9 @@ export default function Home() {
               <div
                 key={item.image}
                 className={`group cursor-pointer overflow-hidden rounded-3xl bg-[#153d2b] shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
-                  index === 0 || index === 4 ? "lg:col-span-2" : ""
+                  index === 0 || index === 5 || index === 9
+                    ? "lg:col-span-2"
+                    : ""
                 }`}
               >
                 <div className="relative h-72 overflow-hidden">
@@ -532,16 +562,20 @@ export default function Home() {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-90"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
 
                   <div className="absolute bottom-5 left-5 right-5 text-left">
                     <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#f2c94c]">
                       YAY Curry
                     </p>
+
                     <h3 className="mt-1 text-xl font-black text-white">
                       {item.title}
                     </h3>
-                    <p className="mt-1 text-sm text-gray-100">{item.desc}</p>
+
+                    <p className="mt-1 text-sm leading-relaxed text-gray-100">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               </div>
