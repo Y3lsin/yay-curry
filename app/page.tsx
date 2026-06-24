@@ -130,7 +130,7 @@ export default function Home() {
 
   const galleryImages = [
     {
-      image: "/images/fachada-noche.jpg",
+      image: "/images/local-frontal.jpg",
       title: "Nuestra fachada",
       desc: "El letrero de YAY Curry iluminando la noche.",
     },
@@ -145,15 +145,11 @@ export default function Home() {
       desc: "Mesas cómodas para amigos y familia.",
     },
     {
-      image: "/images/local-frontal.jpg",
+      image: "/images/rincon-especial.jpg",
       title: "Rincón especial",
       desc: "Un ambiente bonito para disfrutar tu pedido.",
     },
-    {
-      image: "/images/interior-1.jpg",
-      title: "Interior del local",
-      desc: "Un espacio sencillo, moderno y agradable.",
-    },
+
     {
       image: "/images/katsu-curry-1.jpg",
       title: "Curry y katsu",
@@ -192,38 +188,59 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f7f3e8] text-[#153d2b]">
-      <header className="fixed left-0 top-0 z-50 w-full bg-[#0f2f22]/90 text-white shadow-md backdrop-blur-md">
+    <main className="min-h-screen scroll-smooth bg-[#f7f3e8] text-[#153d2b]">
+      <header className="fixed left-0 top-0 z-50 w-full border-b border-white/5 bg-[#0f2f22]/90 text-white shadow-md backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6">
-          <a href="#inicio" className="flex items-center gap-3">
+          <a
+            href="#inicio"
+            className="flex items-center gap-3 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22]"
+          >
             <img
               src="/images/logo-yay-curry.png"
               alt="Logo de YAY Curry"
               className="h-11 w-11 rounded-full object-cover ring-2 ring-[#f2c94c]/50 md:h-12 md:w-12"
             />
 
-            <h1 className="text-xl font-bold md:text-2xl">
+            <h1 className="text-xl font-bold tracking-tight md:text-2xl">
               YAY <span className="text-[#f2c94c]">Curry</span>
             </h1>
           </a>
 
           <div className="hidden gap-8 md:flex">
-            <a href="#inicio" className="transition hover:text-[#f2c94c]">
+            <a
+              href="#inicio"
+              className="relative py-1 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#f2c94c] after:transition-all after:duration-300 hover:after:w-full"
+            >
               Inicio
             </a>
-            <a href="#menu" className="transition hover:text-[#f2c94c]">
+            <a
+              href="#menu"
+              className="relative py-1 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#f2c94c] after:transition-all after:duration-300 hover:after:w-full"
+            >
               Menú
             </a>
-            <a href="#nosotros" className="transition hover:text-[#f2c94c]">
+            <a
+              href="#nosotros"
+              className="relative py-1 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#f2c94c] after:transition-all after:duration-300 hover:after:w-full"
+            >
               Nosotros
             </a>
-            <a href="#galeria" className="transition hover:text-[#f2c94c]">
+            <a
+              href="#galeria"
+              className="relative py-1 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#f2c94c] after:transition-all after:duration-300 hover:after:w-full"
+            >
               Galería
             </a>
-            <a href="#ubicacion" className="transition hover:text-[#f2c94c]">
+            <a
+              href="#ubicacion"
+              className="relative py-1 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#f2c94c] after:transition-all after:duration-300 hover:after:w-full"
+            >
               Ubicación
             </a>
-            <a href="#contacto" className="transition hover:text-[#f2c94c]">
+            <a
+              href="#contacto"
+              className="relative py-1 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#f2c94c] after:transition-all after:duration-300 hover:after:w-full"
+            >
               Contacto
             </a>
           </div>
@@ -232,7 +249,7 @@ export default function Home() {
             href="https://wa.me/51991607054"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#f2c94c] px-4 py-2 text-sm font-semibold text-[#153d2b] transition hover:-translate-y-1 hover:bg-white hover:shadow-lg md:px-5 md:text-base"
+            className="rounded-full bg-[#f2c94c] px-4 py-2 text-sm font-semibold text-[#153d2b] shadow-sm transition hover:-translate-y-1 hover:bg-white hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22] md:px-5 md:text-base"
           >
             WhatsApp
           </a>
@@ -259,7 +276,7 @@ export default function Home() {
               Bienvenido a YAY Curry
             </p>
 
-            <h2 className="mb-6 max-w-3xl text-5xl font-black leading-tight drop-shadow-lg md:text-7xl">
+            <h2 className="mb-6 max-w-3xl text-5xl font-black leading-[1.05] drop-shadow-lg md:text-7xl">
               El sabor del curry que conquista tu día
             </h2>
 
@@ -271,7 +288,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#menu"
-                className="rounded-full bg-[#f2c94c] px-7 py-3 font-bold text-[#153d2b] transition hover:-translate-y-1 hover:bg-white hover:shadow-lg"
+                className="rounded-full bg-[#f2c94c] px-7 py-3 font-bold text-[#153d2b] shadow-md transition hover:-translate-y-1 hover:bg-white hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22]"
               >
                 Ver menú
               </a>
@@ -280,28 +297,28 @@ export default function Home() {
                 href="https://wa.me/51991607054"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-[#f2c94c] bg-black/20 px-7 py-3 font-bold text-[#f2c94c] backdrop-blur-sm transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:text-[#153d2b] hover:shadow-lg"
+                className="rounded-full border border-[#f2c94c] bg-black/20 px-7 py-3 font-bold text-[#f2c94c] backdrop-blur-sm transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:text-[#153d2b] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22]"
               >
                 Escríbenos
               </a>
             </div>
 
             <div className="mt-10 grid max-w-xl gap-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
+              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm transition hover:border-[#f2c94c]/40 hover:bg-white/15">
                 <p className="text-2xl font-black text-[#f2c94c]">12:00 pm</p>
                 <p className="mt-1 text-sm text-gray-100">
                   Abrimos todos los días
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
+              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm transition hover:border-[#f2c94c]/40 hover:bg-white/15">
                 <p className="text-2xl font-black text-[#f2c94c]">YAY</p>
                 <p className="mt-1 text-sm text-gray-100">
                   Curry • Katsu • Mochi
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
+              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm transition hover:border-[#f2c94c]/40 hover:bg-white/15">
                 <p className="text-2xl font-black text-[#f2c94c]">Wanchaq</p>
                 <p className="mt-1 text-sm text-gray-100">
                   Urb. Santa Mónica B14
@@ -312,6 +329,25 @@ export default function Home() {
 
           <div className="hidden md:block"></div>
         </div>
+
+        <a
+          href="#menu"
+          aria-label="Bajar al menú"
+          className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-bounce text-[#f2c94c]/80 transition hover:text-[#f2c94c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2c94c] motion-reduce:animate-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-7 w-7"
+          >
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+          </svg>
+        </a>
       </section>
 
       <section className="bg-white px-6 py-16">
@@ -324,9 +360,9 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item}
-              className="rounded-2xl bg-[#f7f3e8] p-6 text-center shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+              className="rounded-2xl bg-[#f7f3e8] p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#153d2b] text-2xl text-[#f2c94c]">
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#153d2b] text-2xl text-[#f2c94c] transition-transform duration-300 group-hover:scale-110">
                 ✦
               </div>
               <h3 className="font-bold">{item}</h3>
@@ -365,7 +401,7 @@ export default function Home() {
 
                   <div className="absolute inset-0 bg-black/0 transition-all duration-300 group-hover:bg-black/35"></div>
 
-                  <button className="absolute bottom-4 left-1/2 z-20 -translate-x-1/2 translate-y-8 rounded-full bg-[#f2c94c] px-5 py-2 text-sm font-bold text-[#153d2b] opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  <button className="absolute bottom-4 left-1/2 z-20 -translate-x-1/2 translate-y-8 rounded-full bg-[#f2c94c] px-5 py-2 text-sm font-bold text-[#153d2b] opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
                     Ver plato
                   </button>
                 </div>
@@ -390,14 +426,14 @@ export default function Home() {
           </div>
 
           <div className="mx-auto mt-10 grid max-w-3xl gap-4 md:grid-cols-2">
-            <div className="rounded-2xl bg-white px-6 py-5 text-center font-semibold text-[#153d2b] shadow-sm">
-               Trae tu tupper y recibe{" "}
-               <span className="font-black text-[#d98c00]">
+            <div className="rounded-2xl bg-white px-6 py-5 text-center font-semibold text-[#153d2b] shadow-sm transition hover:shadow-md">
+              Trae tu tupper y recibe{" "}
+              <span className="font-black text-[#d98c00]">
                 S/ 2 de descuento
-               </span>{""}
-               en platos principales. ¡Curry delicioso con conciencia ecológica!
+              </span>{" "}
+              en platos principales. ¡Curry delicioso con conciencia ecológica!
             </div>
-            <div className="rounded-2xl border-2 border-[#f2c94c] bg-[#153d2b] px-6 py-5 text-center font-semibold text-white shadow-sm">
+            <div className="rounded-2xl border-2 border-[#f2c94c] bg-[#153d2b] px-6 py-5 text-center font-semibold text-white shadow-sm transition hover:shadow-md">
               Compra 10 veces y la{" "}
               <span className="font-black text-[#f2c94c]">
                 proxima comida es gratis
@@ -406,12 +442,11 @@ export default function Home() {
             </div>
           </div>
 
-
           <a
             href="https://wa.me/51991607054"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-block rounded-full bg-[#153d2b] px-8 py-3 font-bold text-white transition hover:-translate-y-1 hover:bg-[#0f2f22] hover:shadow-lg"
+            className="mt-10 inline-block rounded-full bg-[#153d2b] px-8 py-3 font-bold text-white shadow-sm transition hover:-translate-y-1 hover:bg-[#0f2f22] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#153d2b] focus-visible:ring-offset-2"
           >
             Consultar por WhatsApp
           </a>
@@ -439,7 +474,7 @@ export default function Home() {
             {fullMenu.map((section) => (
               <div
                 key={section.title}
-                className="rounded-3xl border border-[#153d2b]/10 bg-[#f7f3e8] p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                className="rounded-3xl border border-[#153d2b]/10 bg-[#f7f3e8] p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="mb-6">
                   <h3 className="text-2xl font-black text-[#153d2b]">
@@ -454,7 +489,7 @@ export default function Home() {
                   {section.items.map((item) => (
                     <div
                       key={`${item.name}-${item.desc}`}
-                      className="flex items-center justify-between gap-4 rounded-2xl bg-white px-5 py-4 shadow-sm"
+                      className="flex items-center justify-between gap-4 rounded-2xl bg-white px-5 py-4 shadow-sm transition hover:shadow-md"
                     >
                       <div>
                         <h4 className="font-black text-[#153d2b]">
@@ -503,14 +538,14 @@ export default function Home() {
             </h2>
 
             <p className="text-gray-200">
-              En YAY Curry compartimos el gusto por la buena comida, combinando
-              sabores japoneses y chinos con una atención cercana. Nuestro
-              objetivo es ofrecer una experiencia deliciosa en cada plato, ideal
-              para disfrutar solo, en familia o con amigos.
+              En YAY Curry compartimos el gusto por la buena comida,
+              combinando sabores japoneses y chinos con una atención cercana.
+              Nuestro objetivo es ofrecer una experiencia deliciosa en cada
+              plato, ideal para disfrutar solo, en familia o con amigos.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-2xl border border-white/10 bg-white/10 p-5">
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 transition hover:border-[#f2c94c]/30 hover:bg-white/[0.14]">
                 <h3 className="font-black text-[#f2c94c]">Sabor casero</h3>
                 <p className="mt-2 text-sm text-gray-200">
                   Platos preparados para disfrutar curry, katsu y mochi en un
@@ -518,8 +553,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/10 p-5">
-                <h3 className="font-black text-[#f2c94c]">Espacio acogedor</h3>
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 transition hover:border-[#f2c94c]/30 hover:bg-white/[0.14]">
+                <h3 className="font-black text-[#f2c94c]">
+                  Espacio acogedor
+                </h3>
                 <p className="mt-2 text-sm text-gray-200">
                   Un local pensado para compartir buenos momentos con amigos o
                   familia.
@@ -605,7 +642,7 @@ export default function Home() {
               href="https://maps.app.goo.gl/jrjv2sE5JiSGd7wK6"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex rounded-full bg-[#153d2b] px-7 py-3 font-bold text-white transition hover:-translate-y-1 hover:bg-[#0f2f22] hover:shadow-lg"
+              className="inline-flex rounded-full bg-[#153d2b] px-7 py-3 font-bold text-white shadow-sm transition hover:-translate-y-1 hover:bg-[#0f2f22] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#153d2b] focus-visible:ring-offset-2"
             >
               Cómo llegar
             </a>
@@ -647,7 +684,7 @@ export default function Home() {
               href="https://www.tiktok.com/@yay.curry"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white px-6 py-3 font-bold text-[#153d2b] transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:shadow-lg"
+              className="rounded-full bg-white px-6 py-3 font-bold text-[#153d2b] shadow-sm transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#153d2b]"
             >
               TikTok
             </a>
@@ -656,7 +693,7 @@ export default function Home() {
               href="https://www.facebook.com/share/1CpxszgVGr/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white px-6 py-3 font-bold text-[#153d2b] transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:shadow-lg"
+              className="rounded-full bg-white px-6 py-3 font-bold text-[#153d2b] shadow-sm transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#153d2b]"
             >
               Facebook
             </a>
@@ -665,7 +702,7 @@ export default function Home() {
               href="https://www.instagram.com/yaycurry?igsh=emNnZzJ5OXVyZHp4&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white px-6 py-3 font-bold text-[#153d2b] transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:shadow-lg"
+              className="rounded-full bg-white px-6 py-3 font-bold text-[#153d2b] shadow-sm transition hover:-translate-y-1 hover:bg-[#f2c94c] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#153d2b]"
             >
               Instagram
             </a>
@@ -685,7 +722,8 @@ export default function Home() {
         href="https://wa.me/51991607054"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#25D366] px-5 py-4 font-bold text-white shadow-xl transition hover:scale-105"
+        aria-label="Escríbenos por WhatsApp"
+        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#25D366] px-5 py-4 font-bold text-white shadow-xl transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f2f22]"
       >
         WhatsApp
       </a>
