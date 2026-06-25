@@ -305,7 +305,7 @@ export default function Home() {
 
             <div className="mt-10 grid max-w-xl gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm transition hover:border-[#f2c94c]/40 hover:bg-white/15">
-                <p className="text-2xl font-black text-[#f2c94c]">12:00 pm</p>
+                <p className="text-2xl font-black text-[#f2c94c]">12:00 </p>
                 <p className="mt-1 text-sm text-gray-100">
                   Abrimos todos los días
                 </p>
@@ -635,7 +635,7 @@ export default function Home() {
             </p>
 
             <p className="mb-6 text-lg">
-              Lunes a domingo de 12:00 p. m. a 10:00 p. m.
+              Lunes a domingo de 12:00  a 10:00 p. m.
             </p>
 
             <a
@@ -676,7 +676,7 @@ export default function Home() {
 
           <p className="mb-2 text-lg">WhatsApp: 991 607 054</p>
           <p className="mb-8 text-lg">
-            Horario: Lunes a domingo de 11:00 a. m. a 10:00 p. m.
+            Horario: Lunes a domingo de 12:00  a 10:00 p. m.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
