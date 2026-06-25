@@ -635,7 +635,7 @@ export default function Home() {
             </p>
 
             <p className="mb-6 text-lg">
-              Lunes a domingo de 11:00 a. m. a 10:00 p. m.
+              Lunes a domingo de 12:00 p. m. a 10:00 p. m.
             </p>
 
             <a
